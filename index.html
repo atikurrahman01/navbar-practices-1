@@ -64,6 +64,17 @@
             </ul>
         </div>
     </nav>
+    <script>
+        const list = document.querySelectorAll(".item");
+        list.forEach((item) => {
+            item.addEventListener("click", () => {
+
+                list.forEach((i) => item.classList.remove(".active"));
+                item.classList.add(active);
+            });
+
+        });
+    </script>
 </body>
 
 </html>
